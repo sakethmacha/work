@@ -73,15 +73,12 @@ select * from temaxi where rn=1;
 
 --5
 
-create table emp_details(
-     emp_id int,
-     emp_name varchar(20),
-     emp_designation varchar(20),
-     emp_age int);
-     insert into emp_details values(310,'pradeep','hr',36),
-    (311,'ashok','manager',28),
-    (312,'pavan kumar','developer',25),
-    (313,'santhosh','manager',28),
-    (314,'tharun','designer',26);
+ create table em(emp_id int primary key,emp_name varchar(20),manager_id int foreign key(manager_id) references em(emp_id));
 
-    select * from emp_details where emp_designation='manager';
+insert into em(emp_id,emp_name,manager_id)
+values(1,'sameer',null),(2,'saaki',1),(3,'srinu',2),(4,'sampath',2),(5,'damodar',2),(6,'sam',3),(7,'ran',4),(8,'you',5);
+
+ select distinct e1.emp_name as manager_name
+ from em e1 join em e2 on e1.emp_id=e2.manager_id;
+
+

@@ -1,0 +1,111 @@
+
+body {
+  background-color: aliceblue;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  gap: 20px;
+  background: black;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  
+}
+
+.navbar a {
+  font-weight: bold;
+  flex: 1;           
+  text-align: center;  
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: chocolate;
+}
+
+.hero {
+  background-image: url("top.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 0;
+}
+
+.section {
+  padding: 70px 20px;
+}
+
+.section-title {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+.menu-buttons {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.menu-buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: chocolate;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-box {
+  /* width: 100%; */
+  max-width: 900px;
+  padding: 20px;
+  border: 2px solid black;
+  text-align: left;
+  background-color: antiquewhite;
+  border-radius: 20px;
+ 
+}
+
+
+form input, form textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
